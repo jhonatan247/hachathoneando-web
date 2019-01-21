@@ -1,0 +1,74 @@
+<nav class="navbar navbar-expand-lg navbar-dark han-gradient sticky-top">
+  <a class="navbar-brand" routerLink="">
+    Hackathoneando
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbar">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" routerLinkActive="active" routerLink="/home">
+        <a class="nav-link">Home</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active" routerLink="/events">
+        <a class="nav-link">Events</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active" routerLink="/blog">
+        <a class="nav-link">Blog</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active" routerLink="/about">
+        <a class="nav-link">About us</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#modalCompra">Login</button>
+    </form>
+  </div>
+</nav>
+
+<div class="modal fade" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-row">
+            <div class="form-group col">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1"><i class="fas fa-key"></i></span>
+                </div>
+                <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="alert alert-warning" role="alert">
+          Recibirás un correo de confirmación.
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-platzi">Login</button>
+      </div>
+    </div>
+  </div>
+</div>

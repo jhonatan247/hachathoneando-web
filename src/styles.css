@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
+.han-gradient {
+    background: linear-gradient(90deg, #e64a19, #ff5722 25%, #ff9800) !important;
+}
+.fab:hover, .fas:hover{
+    color: #0077CC;
+}
